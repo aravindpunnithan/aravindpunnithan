@@ -51,8 +51,6 @@ $ whoami
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:aravindpunnithan@ieee.org)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aravindpunnithan/)
 
-<!-- Drop your real LinkedIn URL above. Add a website/Twitter badge here too if you like. -->
-
 ---
 
 <sub>“Talk is cheap. Show me the code.” ~ Linus Torvalds</sub>
