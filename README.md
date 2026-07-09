@@ -38,11 +38,8 @@ $ whoami
 
 ### 📊 GitHub Stats
 
-![Aravind's GitHub stats](https://github-readme-stats.vercel.app/api?username=aravindpunnithan&show_icons=true&hide_border=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aravindpunnithan&layout=compact&hide_border=true&theme=tokyonight)
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=aravindpunnithan&hide_border=true&theme=tokyonight)
+<!-- Rendered daily by .github/workflows/metrics.yml and committed as github-metrics.svg -->
+![Aravind's GitHub metrics](./github-metrics.svg)
 
 ---
 

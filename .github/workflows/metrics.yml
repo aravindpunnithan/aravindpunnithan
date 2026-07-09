@@ -1,0 +1,48 @@
+name: Metrics
+
+on:
+  # Rebuild the SVG once a day
+  schedule:
+    - cron: "0 0 * * *"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+  # Rebuild whenever the workflow itself changes
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate metrics.svg
+        uses: lowlighter/metrics@latest
+        with:
+          # A personal access token (classic, scope: read:user + repo) stored as a repo secret.
+          # See setup notes in the chat / repo README.
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: aravindpunnithan
+          filename: github-metrics.svg
+
+          # ---- Layout ----
+          template: classic
+          base: header, activity, repositories, metadata
+          config_timezone: Asia/Kolkata
+
+          # ---- Languages (replaces the "Top Languages" card) ----
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+
+          # ---- Coding habits / activity (replaces the streak card) ----
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+          # ---- Isometric contribution calendar (GitHub-native graph, 3D) ----
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
