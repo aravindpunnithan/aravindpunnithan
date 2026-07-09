@@ -39,7 +39,7 @@ $ whoami
 ### 📊 GitHub Stats
 
 <!-- Rendered daily by .github/workflows/metrics.yml and committed as github-metrics.svg -->
-![Aravind's GitHub metrics](./github-metrics.svg)
+![Aravind's GitHub metrics](./github-metrics.svg?v=2)
 
 ---
 
